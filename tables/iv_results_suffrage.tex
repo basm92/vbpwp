@@ -1,0 +1,63 @@
+\begin{table}[!h]
+
+\caption{\label{tab:ivresults_suffrage}IV Estimates of Wealth on the Propensity to Vote for Suffrage Extensions}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lcccccc}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{1}{c}{Personal Wealth} & \multicolumn{1}{c}{Vote} & \multicolumn{1}{c}{Personal Wealth} & \multicolumn{1}{c}{Vote} & \multicolumn{1}{c}{Personal Wealth} & \multicolumn{1}{c}{Vote} \\
+\cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Father Politician & \num{1.773}* &  & \num{1.665} &  & \num{1.287} & \\
+ & (\num{0.975}) &  & (\num{1.036}) &  & (\num{1.149}) & \\
+Personal Wealth &  & \num{-0.026} &  & \num{-0.059} &  & \num{-0.078}\\
+ &  & (\num{0.030}) &  & (\num{0.047}) &  & (\num{0.081})\\
+\% Industry in District &  &  & \num{22.429}** & \num{0.967} & \num{17.964}** & \num{0.808}\\
+ &  &  & (\num{8.608}) & (\num{1.205}) & (\num{8.657}) & (\num{1.742})\\
+\% Services in District &  &  & \num{11.043}*** & \num{0.712} & \num{10.554}** & \num{1.006}\\
+ &  &  & (\num{4.148}) & (\num{0.616}) & (\num{4.409}) & (\num{0.952})\\
+\% Catholic in District &  &  & \num{-11.378} & \num{-0.395} & \num{-9.626} & \num{-0.615}\\
+ &  &  & (\num{8.239}) & (\num{0.845}) & (\num{9.031}) & (\num{1.100})\\
+\% Hervormd Protestant in District &  &  & \num{-16.805}* & \num{-0.357} & \num{-14.902} & \num{-0.672}\\
+ &  &  & (\num{10.020}) & (\num{1.051}) & (\num{10.545}) & (\num{1.435})\\
+\% Inhabitants Paying Income Tax &  &  &  &  & \num{0.000} & \num{0.000}\\
+ &  &  &  &  & (\num{0.000}) & \vphantom{4} (\num{0.000})\\
+\% Inhabitants Paying Wealth Tax &  &  &  &  & \num{0.000} & \num{0.000}\\
+ &  &  &  &  & (\num{0.000}) & \vphantom{3} (\num{0.000})\\
+Total Personal Taxes in District &  &  &  &  & \num{0.000} & \num{0.000}\\
+ &  &  &  &  & (\num{0.000}) & \vphantom{2} (\num{0.000})\\
+No. Strikes in District &  &  &  &  & \num{0.001} & \num{0.002}\\
+ &  &  &  &  & (\num{0.032}) & (\num{0.006})\\
+Seniority &  &  &  &  & \num{0.000} & \num{0.000}\\
+ &  &  &  &  & (\num{0.000}) & \vphantom{1} (\num{0.000})\\
+Socialist Vote Share in District &  &  &  &  & \num{0.000} & \num{0.000}\\
+ &  &  &  &  & (\num{0.000}) & (\num{0.000})\\
+Socialist Candidate in District &  &  &  &  & \num{0.186} & \num{0.211}*\\
+ &  &  &  &  & (\num{0.993}) & (\num{0.110})\\
+Vote Share &  &  &  &  & \num{-0.698} & \num{0.351}\\
+ &  &  &  &  & (\num{1.886}) & (\num{0.269})\\
+Vote Share Nearest Competitor &  &  &  &  & \num{-0.707} & \num{0.508}\\
+ &  &  &  &  & (\num{2.316}) & (\num{0.367})\\
+Turnout &  &  &  &  & \num{4.398} & \num{0.325}\\
+ &  &  &  &  & (\num{3.775}) & (\num{0.576})\\
+Days since Last Election &  &  &  &  & \num{0.000} & \num{0.000}\\
+ &  &  &  &  & (\num{0.001}) & (\num{0.000})\\
+\midrule
+N & \num{238} & \num{238} & \num{210} & \num{210} & \num{194} & \num{194}\\
+Adj. $R^2$ & \num{0.08} & \num{0.25} & \num{0.12} & \num{0.01} & \num{0.08} & \num{-0.15}\\
+Clustering & Politician & Politician & Politician & Politician & Politician & Politician\\
+Law Fixed Effects & Yes & Yes & Yes & Yes & Yes & Yes\\
+Party Fixed Effects & Yes & Yes & Yes & Yes & Yes & Yes\\
+First-Stage Wald Stat. &  & 3.31 &  & 2.59 &  & 1.26\\
+Selection Ratio & - & - & - & 0.56 & - & 0.57\\
+\bottomrule
+\multicolumn{7}{l}{\rule{0pt}{1em}* p $<$ 0.1, ** p $<$ 0.05, *** p $<$ 0.01}\\
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Vote is defined as 1 if the politician is in favor of the reform, 0 otherwise. Robust standard errors clustered at the politician-level in parentheses. Personal Wealth is defined as ihs(Wealth at Time of Vote), and instrumented by Father's profession.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

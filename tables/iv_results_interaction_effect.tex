@@ -1,0 +1,66 @@
+\begin{table}[!h]
+
+\caption{\label{tab:ivresults_interaction_effect}IV Estimates of Wealth on the Propensity to Vote for Fiscal Reforms}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lcccccc}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Suffrage} & \multicolumn{3}{c}{Fiscal} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Personal Wealth x Catholic & \num{-0.003} & \num{0.032} & \num{0.013} & \num{-0.028} & \num{-0.020} & \num{-0.025}\\
+ & (\num{0.111}) & (\num{0.783}) & (\num{0.094}) & (\num{0.036}) & (\num{0.044}) & (\num{0.074})\\
+Personal Wealth x Protestant & \num{-0.039} & \num{-0.100} & \num{-0.130} & \num{-0.083}** & \num{-0.087}** & \num{-0.091}*\\
+ & (\num{0.046}) & (\num{0.068}) & (\num{0.087}) & (\num{0.040}) & (\num{0.041}) & (\num{0.048})\\
+Personal Wealth x Liberal & \num{-0.025} & \num{-0.039} & \num{0.002} & \num{-0.029} & \num{-0.052} & \num{-0.054}\\
+ & (\num{0.046}) & (\num{0.152}) & (\num{0.080}) & (\num{0.032}) & (\num{0.040}) & (\num{0.058})\\
+\% Industry in District &  & \num{-0.552} & \num{-0.651} &  & \num{0.598} & \num{0.582}\\
+ &  & (\num{12.113}) & (\num{1.455}) &  & (\num{0.561}) & (\num{0.840})\\
+\% Services in District &  & \num{0.025} & \num{0.273} &  & \num{0.224} & \num{0.188}\\
+ &  & (\num{5.688}) & (\num{0.736}) &  & (\num{0.271}) & (\num{0.361})\\
+\% Catholic in District &  & \num{0.237} & \num{-0.416} &  & \num{0.474} & \num{0.468}\\
+ &  & (\num{8.874}) & (\num{1.672}) &  & (\num{0.713}) & (\num{1.051})\\
+\% Hervormd Protestant in District &  & \num{0.607} & \num{-0.159} &  & \num{1.114} & \num{0.943}\\
+ &  & (\num{11.782}) & (\num{1.943}) &  & (\num{0.781}) & (\num{1.132})\\
+\% Inhabitants Paying Income Tax &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{5} (\num{0.000})\\
+\% Inhabitants Paying Wealth Tax &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{4} (\num{0.000})\\
+Total Personal Taxes in District &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{3} (\num{0.000})\\
+No. Strikes in District &  &  & \num{0.000} &  &  & \num{-0.001}\\
+ &  &  & (\num{0.005}) &  &  & (\num{0.002})\\
+Seniority &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{2} (\num{0.000})\\
+Socialist Vote Share in District &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{1} (\num{0.000})\\
+Socialist Candidate in District &  &  & \num{0.189}* &  &  & \num{-0.017}\\
+ &  &  & (\num{0.098}) &  &  & (\num{0.102})\\
+Vote Share &  &  & \num{0.364} &  &  & \num{-0.118}\\
+ &  &  & (\num{0.243}) &  &  & (\num{0.214})\\
+Vote Share Nearest Competitor &  &  & \num{0.487} &  &  & \num{0.207}\\
+ &  &  & (\num{0.349}) &  &  & (\num{0.415})\\
+Turnout &  &  & \num{0.099} &  &  & \num{-0.085}\\
+ &  &  & (\num{0.370}) &  &  & (\num{0.399})\\
+Days since Last Election &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & (\num{0.000})\\
+\midrule
+N & \num{230} & \num{209} & \num{193} & \num{307} & \num{280} & \num{270}\\
+Adj. $R^2$ & \num{0.24} & \num{0.01} & \num{0.04} & \num{0.31} & \num{0.34} & \num{0.28}\\
+Clustering & Politician & Politician & Politician & Politician & Politician & Politician\\
+Law Fixed Effects & Yes & Yes & Yes & Yes & Yes & Yes\\
+Party Fixed Effects & Yes & Yes & Yes & Yes & Yes & Yes\\
+First-Stage Wald Stat. (Cath) & 0.42 & 0.49 & 0.39 & 1.08 & 0.47 & 1.01\\
+First-Stage Wald Stat. (Lib.) & 3.57 & 3.31 & 1.77 & 3.35 & 3.18 & 3.18\\
+First-Stage Wald Stat. (Prot.) & 2.44 & 1.61 & 1.72 & 3.77 & 2.91 & 2.26\\
+\bottomrule
+\multicolumn{7}{l}{\rule{0pt}{1em}* p $<$ 0.1, ** p $<$ 0.05, *** p $<$ 0.01}\\
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Vote is defined as 1 if the politician is in favor of the reform, 0 otherwise. Robust standard errors clustered at the politician-level in parentheses. Personal Wealth is defined as ihs(Wealth at Time of Vote), and its interaction with party is instrumented by the interaction Father's profession interacted by party.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

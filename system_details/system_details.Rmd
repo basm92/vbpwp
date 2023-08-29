@@ -1,0 +1,33 @@
+---
+title: "R, System, and Packages Details"
+author: "Bas Machielsen"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Short Introduction
+
+This document details the system information, package versions and R environment information that was used to run these analyses on. 
+
+# Show package versions
+
+```{r}
+package_versions <- installed.packages()
+print(package_versions[, c("Package", "Version")])
+```
+
+# Show R environment information
+
+```{r}
+sessionInfo()
+```
+
+# Show system information
+
+```{r}
+Sys.info()
+```

@@ -1,0 +1,58 @@
+\begin{table}[!h]
+
+\caption{\label{tab:logit_suffrage_fiscal}Logit Analysis of Suffrage Extension and Fiscal Legislation}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lcccccc}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Suffrage} & \multicolumn{3}{c}{Fiscal} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Personal Wealth & \num{-0.038} & \num{-0.033} & \num{-0.028} & \num{-0.086}** & \num{-0.101}** & \num{-0.104}**\\
+ & (\num{0.028}) & (\num{0.030}) & (\num{0.032}) & (\num{0.034}) & (\num{0.041}) & (\num{0.045})\\
+\% Industry in District &  & \num{-1.409} & \num{-2.318} &  & \num{1.244} & \num{2.562}\\
+ &  & (\num{3.325}) & (\num{3.968}) &  & (\num{4.178}) & (\num{4.577})\\
+\% Services in District &  & \num{0.086} & \num{0.200} &  & \num{-0.559} & \num{-3.207}\\
+ &  & (\num{1.748}) & (\num{2.207}) &  & (\num{2.130}) & (\num{2.476})\\
+\% Catholic in District &  & \num{3.727} & \num{4.606} &  & \num{0.355} & \num{-0.565}\\
+ &  & (\num{3.552}) & (\num{3.754}) &  & (\num{4.023}) & (\num{4.533})\\
+\% Hervormd Protestant in District &  & \num{4.704} & \num{5.498} &  & \num{3.599} & \num{0.999}\\
+ &  & (\num{4.146}) & (\num{4.344}) &  & (\num{4.667}) & (\num{5.248})\\
+\% Inhabitants Paying Income Tax &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{4} (\num{0.000})\\
+\% Inhabitants Paying Wealth Tax &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{3} (\num{0.000})\\
+Total Personal Taxes in District &  &  & \num{0.000} &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{2} (\num{0.000})\\
+No. Strikes in District &  &  & \num{0.052} &  &  & \num{-0.007}\\
+ &  &  & (\num{0.070}) &  &  & (\num{0.015})\\
+Seniority &  &  & \num{0.000}** &  &  & \num{0.000}\\
+ &  &  & (\num{0.000}) &  &  & \vphantom{1} (\num{0.000})\\
+Socialist Vote Share in District &  &  & \num{0.000} &  &  & \num{0.001}*\\
+ &  &  & (\num{0.000}) &  &  & (\num{0.000})\\
+Socialist Candidate in District &  &  & \num{1.473}** &  &  & \num{-0.467}\\
+ &  &  & (\num{0.631}) &  &  & (\num{0.869})\\
+Vote Share &  &  & \num{1.576} &  &  & \num{-1.706}\\
+ &  &  & (\num{1.406}) &  &  & (\num{1.564})\\
+Vote Share Nearest Competitor &  &  & \num{3.923}** &  &  & \num{0.615}\\
+ &  &  & (\num{1.881}) &  &  & (\num{2.264})\\
+Turnout &  &  & \num{0.157} &  &  & \num{-0.021}\\
+ &  &  & (\num{1.800}) &  &  & (\num{2.114})\\
+Days since Last Election &  &  & \num{0.001} &  &  & \num{-0.001}\\
+ &  &  & (\num{0.001}) &  &  & (\num{0.001})\\
+\midrule
+N & \num{286} & \num{255} & \num{238} & \num{347} & \num{311} & \num{301}\\
+Nagelkerke $R^2$ & \num{0.01} & \num{0.03} & \num{0.20} & \num{0.05} & \num{0.15} & \num{0.22}\\
+Party Fixed Effects & Yes & Yes & Yes & Yes & Yes & Yes\\
+Law Fixed Effects & Yes & Yes & Yes & Yes & Yes & Yes\\
+\bottomrule
+\multicolumn{7}{l}{\rule{0pt}{1em}* p $<$ 0.1, ** p $<$ 0.05, *** p $<$ 0.01}\\
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Standard errors in parentheses. Results for lower house voting outcomes. The dependent variable, Vote, is defined as 1 if the politician is in favor of the reform, 0 otherwise.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}
