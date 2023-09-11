@@ -35,7 +35,7 @@ description <- tribble(
     "First-Stage Wald Stat.", "", fstats[1], "", fstats[2], "", fstats[3],
     "Selection Ratio", "-", "-", "-", sr[1], "-", sr[2])
 
-notes <- "Vote is defined as 1 if the politician is in favor of the reform, 0 otherwise. Robust standard errors clustered at the politician-level in parentheses. Personal Wealth is defined as ihs(Wealth at Time of Vote), and instrumented by Expected Inheritance."
+notes <- "Vote is defined as 1 if the politician is in favor of the reform, 0 otherwise. Robust standard errors clustered at the politician-level in parentheses. Personal Wealth is defined as ihs(Wealth at Time of Vote), and instrumented by Inheritance."
 knitr::opts_current$set(label = "ivresults_fisc_other_classific_expinherit")
 ivres <- list(fs1, iv1, fs2, iv2, fs3, iv3)
 modelsummary(ivres, 

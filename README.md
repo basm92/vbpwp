@@ -10,7 +10,7 @@ This replication package can serve two purposes: replication of the analyses in 
 
 1. (Github) Clone this repository locally / (Dataverse) Unzip the .tar.gz file in a folder
 1. Open the `.Rproj` file in Rstudio.
-2. Run the `download necessary data.R` script to download the necessary data to your hard drive (automatically in the correct folder) which isn't already on this repository.
+2. Run the `download\_necessary\_files.R` script to download the necessary data to your hard drive (automatically in the correct folder) which isn't already on this repository.
 3. Browse through `code/analysis/tables_main_text` and `code/analysis/tables_robustness` for a table from the text or appendix to be replicated. Once found:
    - Open the corresponding .R file.
    - This file imports the data used for the analysis, and estimates the regressions and calculates the reported statistics.
@@ -52,12 +52,13 @@ soc_dum | 1 if socialist competed in district, 0 otherwise
 dsle | Days since last election
 vote_share_nc | Vote Share Nearest Competitor
 {re, dugobo,fogobo,duprbo, foprbo, dush, fosh, cash, misc, debt, ta11, tl11, nw11, ta0, tl0, nw0} | Politician Portfolio composition (Nom., Date of Death guilders)*
+w_deflated | Wealth at time of death deflated to 1900 guilders
 wealth_defl | Wealth at time of vote deflated to 1900 guilders
 defw_rb | Wealth at time of vote using yearly rebalancing deflated to 1900 guilders
 expected_inheritance_rough | Total Inheritance Parents as mentioned in the paper
 expected_inheritance | Total Inheritance divided by (number of siblings + 1)
 father_politician | 1 if father of politician $i$ was a politician at some point in time, 0 otherwise
-deflated_eh | Expected inheritance deflated to 1900 guilders
+deflated_eh | Inheritance deflated to 1900 guilders
 amount_of_strikes | Number of Strikes in district in year before vote
 
 
